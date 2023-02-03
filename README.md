@@ -16,3 +16,8 @@ Optional arguments:
   --output, -o     Path to where should updated rules be saved.
   --apply, -a          Specifies if to apply changes by executing "oc apply -f <filename>".
 ```
+## Notes
+Scirpt isn't super generic as of now. It assumes certain things in JSON structure, mainly that it was obtained by running:
+```
+oc get promrule [ -n <namespace> | -A ] -o json > rules.json
+```
