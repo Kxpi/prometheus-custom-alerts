@@ -16,6 +16,19 @@ Optional arguments:
   --output, -o     Path to where should custom rules be saved.
   --apply, -a          Specifies if to apply changes by executing "oc apply -f <filename>".
 ```
+## Example list of alert names for ```--file / -f``` flag:
+```
+NodeFilesystemAlmostOutOfSpace
+MCDRebootError
+ExtremelyHighIndividualControlPlaneCPU
+etcdHighNumberOfFailedProposals
+MultipleDefaultStorageClasses
+KubeSchedulerDown
+CoreDNSPanicking
+AlertmanagerFailedReload
+KubeAPIErrorBudgetBurn
+MachineConfigControllerPausedPoolKubeletCA
+```
 ## Notes
 Scirpt assumes certain things in JSON structure so for example dumped rules should be obtained by running:
 ```
